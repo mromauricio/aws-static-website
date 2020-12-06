@@ -42,6 +42,10 @@
             .then(response => response.text())
             .then(result => alert(JSON.parse(result).body))
             .catch(error => console.log('error', error));
+
+            document.getElementById('fName').value = '';
+            document.getElementById('lName').value = '';
+            document.getElementById('example').value = '';
         }
     </script>
 </head>
